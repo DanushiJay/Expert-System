@@ -71,99 +71,100 @@
    then
        (printout t "Fraud Probability - High" crlf)
 
-   else if (and (eq ?transaction_amount "Medium") (eq ?purchase_location "Unfamiliar") (eq ?transaction_time "Unusual") (eq ?transaction_device "Unusual"))
+   else (if (and (eq ?transaction_amount "Medium") (eq ?purchase_location "Unfamiliar") (eq ?transaction_time "Unusual") (eq ?transaction_device "Unusual"))
        then
        (printout t "Fraud Probability - High" crlf)
 
-   else if (and (eq ?transaction_amount "Low") (eq ?purchase_location "Unfamiliar") (eq ?transaction_time "Unusual") (eq ?transaction_device "Unusual"))
+   else (if (and (eq ?transaction_amount "Low") (eq ?purchase_location "Unfamiliar") (eq ?transaction_time "Unusual") (eq ?transaction_device "Unusual"))
        then
        (printout t "Fraud Probability - High" crlf)
 
-   else if (and (eq ?transaction_amount "High") (eq ?purchase_location "Unfamiliar") (eq ?transaction_time "Unusual") (eq ?transaction_device "Unusual"))
+   else (if (and (eq ?transaction_amount "High") (eq ?purchase_location "Unfamiliar") (eq ?transaction_time "Unusual") (eq ?transaction_device "Unusual"))
       then
        (printout t "Fraud Probability - Medium" crlf)
 
-   else if (and (eq ?transaction_amount "High") (eq ?purchase_location "Unfamiliar") (eq ?transaction_time "Regular") (eq ?transaction_device "Unusual"))
+   else (if (and (eq ?transaction_amount "High") (eq ?purchase_location "Unfamiliar") (eq ?transaction_time "Regular") (eq ?transaction_device "Unusual"))
        then
        (printout t "Fraud Probability - Medium" crlf)
 
-   else if (and (eq ?transaction_amount "High") (eq ?purchase_location "Familiar") (eq ?transaction_time "Regular") (eq ?transaction_device "Unusual"))
+   else (if (and (eq ?transaction_amount "High") (eq ?purchase_location "Familiar") (eq ?transaction_time "Regular") (eq ?transaction_device "Unusual"))
       then
        (printout t "Fraud Probability - Medium" crlf)
 
-   else if (and (eq ?transaction_amount "High") (eq ?purchase_location "Familiar") (eq ?transaction_time "Unusual") (eq ?transaction_device "Unusual"))
+   else (if (and (eq ?transaction_amount "High") (eq ?purchase_location "Familiar") (eq ?transaction_time "Unusual") (eq ?transaction_device "Unusual"))
       then
        (printout t "Fraud Probability - Medium" crlf)
 
-   else if (and (eq ?transaction_amount "Medium") (eq ?purchase_location "Familiar") (eq ?transaction_time "Unusual") (eq ?transaction_device "Unusual"))
+   else (if (and (eq ?transaction_amount "Medium") (eq ?purchase_location "Familiar") (eq ?transaction_time "Unusual") (eq ?transaction_device "Unusual"))
      then
        (printout t "Fraud Probability - Medium" crlf)
 
-   else if (and (eq ?transaction_amount "Medium") (eq ?purchase_location "Unfamiliar") (eq ?transaction_time "Regular") (eq ?transaction_device "Unusual"))
+   else (if (and (eq ?transaction_amount "Medium") (eq ?purchase_location "Unfamiliar") (eq ?transaction_time "Regular") (eq ?transaction_device "Unusual"))
       then
        (printout t "Fraud Probability - Medium" crlf)
 
-   else if (and (eq ?transaction_amount "Medium") (eq ?purchase_location "Unfamiliar") (eq ?transaction_time "Unusual") (eq ?transaction_device "Unusual"))
+   else (if (and (eq ?transaction_amount "Medium") (eq ?purchase_location "Unfamiliar") (eq ?transaction_time "Unusual") (eq ?transaction_device "Unusual"))
       then
        (printout t "Fraud Probability - Medium" crlf)
 
-   else if (and (eq ?transaction_amount "Low") (eq ?purchase_location "Unfamiliar") (eq ?transaction_time "Unusual") (eq ?transaction_device "Unusual"))
+   else (if (and (eq ?transaction_amount "Low") (eq ?purchase_location "Unfamiliar") (eq ?transaction_time "Unusual") (eq ?transaction_device "Unusual"))
       then
        (printout t "Fraud Probability - Medium" crlf)
 
-   else if (and (eq ?transaction_amount "Low") (eq ?purchase_location "Familiar") (eq ?transaction_time "Unusual") (eq ?transaction_device "Unusual"))
+   else (if (and (eq ?transaction_amount "Low") (eq ?purchase_location "Familiar") (eq ?transaction_time "Unusual") (eq ?transaction_device "Unusual"))
       then
        (printout t "Fraud Probability - Medium" crlf)
 
-   else if (and (eq ?transaction_amount "High") (eq ?purchase_location "Familiar") (eq ?transaction_time "Regular") (eq ?transaction_device "Usual"))
-     then
-       (printout t "Fraud Probability - Low" crlf)
-
-   else if (and (eq ?transaction_amount "High") (eq ?purchase_location "Unfamiliar") (eq ?transaction_time "Regular") (eq ?transaction_device "Usual"))
+   else (if (and (eq ?transaction_amount "High") (eq ?purchase_location "Familiar") (eq ?transaction_time "Regular") (eq ?transaction_device "Usual"))
      then
        (printout t "Fraud Probability - Low" crlf)
 
-   else if (and (eq ?transaction_amount "High") (eq ?purchase_location "Familiar") (eq ?transaction_time "Unusual") (eq ?transaction_device "Usual"))
+   else (if (and (eq ?transaction_amount "High") (eq ?purchase_location "Unfamiliar") (eq ?transaction_time "Regular") (eq ?transaction_device "Usual"))
      then
        (printout t "Fraud Probability - Low" crlf)
 
-   else if (and (eq ?transaction_amount "Medium") (eq ?purchase_location "Familiar") (eq ?transaction_time "Regular") (eq ?transaction_device "Unusual"))
+   else (if (and (eq ?transaction_amount "High") (eq ?purchase_location "Familiar") (eq ?transaction_time "Unusual") (eq ?transaction_device "Usual"))
+     then
+       (printout t "Fraud Probability - Low" crlf)
+
+   else (if (and (eq ?transaction_amount "Medium") (eq ?purchase_location "Familiar") (eq ?transaction_time "Regular") (eq ?transaction_device "Unusual"))
        then
        (printout t "Fraud Probability - Low" crlf)
 
-   else if (and (eq ?transaction_amount "Medium") (eq ?purchase_location "Familiar") (eq ?transaction_time "Regular") (eq ?transaction_device "Usual"))
+   else (if (and (eq ?transaction_amount "Medium") (eq ?purchase_location "Familiar") (eq ?transaction_time "Regular") (eq ?transaction_device "Usual"))
       then
        (printout t "Fraud Probability - Low" crlf)
 
-   else if (and (eq ?transaction_amount "Medium") (eq ?purchase_location "Familiar") (eq ?transaction_time "Unusual") (eq ?transaction_device "Unusual"))
-       (printout t "Fraud Probability - Low" crlf)
+   else (if (and (eq ?transaction_amount "Medium") (eq ?purchase_location "Familiar") (eq ?transaction_time "Unusual") (eq ?transaction_device "Unusual"))
+      then
+	 (printout t "Fraud Probability - Low" crlf)
 
-   else if (and (eq ?transaction_amount "Medium") (eq ?purchase_location "Unfamiliar") (eq ?transaction_time "Regular") (eq ?transaction_device "Usual"))
+   else (if (and (eq ?transaction_amount "Medium") (eq ?purchase_location "Unfamiliar") (eq ?transaction_time "Regular") (eq ?transaction_device "Usual"))
       then
        (printout t "Fraud Probability - Low" crlf)
 
-   else if (and (eq ?transaction_amount "Low") (eq ?purchase_location "Familiar") (eq ?transaction_time "Regular") (eq ?transaction_device "Usual"))
+   else (if (and (eq ?transaction_amount "Low") (eq ?purchase_location "Familiar") (eq ?transaction_time "Regular") (eq ?transaction_device "Usual"))
       then
        (printout t "Fraud Probability - Low" crlf)
 
-   else if (and (eq ?transaction_amount "Low") (eq ?purchase_location "Familiar") (eq ?transaction_time "Regular") (eq ?transaction_device "Unusual"))
+   else (if (and (eq ?transaction_amount "Low") (eq ?purchase_location "Familiar") (eq ?transaction_time "Regular") (eq ?transaction_device "Unusual"))
        then
        (printout t "Fraud Probability - Low" crlf)
 
-   else if (and (eq ?transaction_amount "Low") (eq ?purchase_location "Familiar") (eq ?transaction_time "Unusual") (eq ?transaction_device "Usual"))
+   else (if (and (eq ?transaction_amount "Low") (eq ?purchase_location "Familiar") (eq ?transaction_time "Unusual") (eq ?transaction_device "Usual"))
       then
        (printout t "Fraud Probability - Low" crlf)
 
-   else if (and (eq ?transaction_amount "Low") (eq ?purchase_location "Unfamiliar") (eq ?transaction_time "Regular") (eq ?transaction_device "Usual"))
+   else (if (and (eq ?transaction_amount "Low") (eq ?purchase_location "Unfamiliar") (eq ?transaction_time "Regular") (eq ?transaction_device "Usual"))
       then
        (printout t "Fraud Probability - Low" crlf)
 
-   else if (and (eq ?transaction_amount "Low") (eq ?purchase_location "Unfamiliar") (eq ?transaction_time "Regular") (eq ?transaction_device "Unusual"))
+   else (if (and (eq ?transaction_amount "Low") (eq ?purchase_location "Unfamiliar") (eq ?transaction_time "Regular") (eq ?transaction_device "Unusual"))
      then
        (printout t "Fraud Probability - Low" crlf)
 
    else
        (printout t "Please enter details correctly." crlf)
-   )
+   ))))))))))))))))))))))))
    (halt)
 )
